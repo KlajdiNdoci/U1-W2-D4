@@ -37,13 +37,14 @@ console.log("Somma numeri interi:", crazySum(20, 20));
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-const crazyDiff = function (n1) {
-  const diff = n1 - 19;
-  if (n1 > 19) {
-    const mult = (n1 - 19) * 3;
-    return mult;
+const crazyDiff = function (n) {
+  let differenza = Math.abs(n - 19);
+
+  if (n > 19) {
+    differenza *= 3;
   }
-  return diff;
+
+  return differenza;
 };
 
 console.log("differenza numeri < 19:", crazyDiff(10));
