@@ -59,6 +59,7 @@ const boundary = function (n) {
   if ((n >= 20 && n <= 100) || n === 400) {
     return true;
   }
+  return false;
 };
 
 console.log("numero < 20 :", boundary(10));
